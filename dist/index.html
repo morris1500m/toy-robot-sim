@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Toy Robot</title>
+  <meta name="description" content="Toy Robot">
+  <meta name="author" content="Caleb">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Toy Robot</h1>  
+    <div class="wrapper">
+      <div id="memeTop" class="box memeTop"></div>
+      <div id="memeLeft" class="box memeLeft"></div>
+      <div id="table" class="box table"></div>
+      <div id="memeRight" class="box memeRight"></div>
+      <div id="memeBottom"class="box memeBottom"></div>
+    </div>
+
+    <h1>Toy Robot</h1>  
+    <div class ="ui">
+      <form>
+        <label for="robotCommand">Command:</label>
+        <input type="text" id="robotCommand" name="robotCommand" value="PLACE 0,0,NORTH">
+        <input type="button" class = "button" value="Submit" onclick=Index.newCommand()>
+      </form> 
+      <p id="output"></p>
+      <p id="error"></p>
+    </div>
+  </div>
+  <script src="bundle.js"></script>  
+</body>
+</html>
